@@ -5,6 +5,7 @@ import { Token } from './entities/token'
 export type BigintIsh = JSBI | number | string
 
 export enum ChainId {
+  CMP_TESTNET=512512,
   ETHEREUM = 1,
   RINKEBY = 4,
   GOERLI = 5,
