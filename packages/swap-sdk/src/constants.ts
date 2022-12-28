@@ -33,6 +33,7 @@ export const FACTORY_ADDRESS_MAP: Record<number, string> = {
   [ChainId.RINKEBY]: FACTORY_ADDRESS_ETH,
   [ChainId.GOERLI]: FACTORY_ADDRESS_ETH,
   [ChainId.BSC]: FACTORY_ADDRESS,
+  [ChainId.CMP_TESTNET]: FACTORY_ADDRESS,
   [ChainId.BSC_TESTNET]: '0x6725f303b657a9451d8ba641348b6761a6cc7a17',
 }
 export const INIT_CODE_HASH = '0x00fb7f630766e6a796048ea87d01acd3068e8ff67d078148a3fa3f4a84f69bd5'
@@ -70,7 +71,7 @@ export const SOLIDITY_TYPE_MAXIMA = {
   [SolidityType.uint8]: JSBI.BigInt('0xff'),
   [SolidityType.uint256]: JSBI.BigInt('0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'),
 }
-
+//rpc =https://galaxy.block.caduceus.foundation/
 export const WETH9 = {
   [ChainId.ETHEREUM]: new Token(
     ChainId.ETHEREUM,

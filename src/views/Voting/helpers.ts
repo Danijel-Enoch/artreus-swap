@@ -112,7 +112,7 @@ interface GetVotingPowerType {
   lockedCakeBalance?: number
   lockedEndTime?: number
 }
-
+//https://galaxy.block.caduceus.foundation/
 const nodeRealProvider = new JsonRpcProvider('https://bsc-mainnet.nodereal.io/v1/5a516406afa140ffa546ee10af7c9b24', 56)
 
 export const getVotingPower = async (

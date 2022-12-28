@@ -15,6 +15,13 @@ export const bscTestnetProvider = new StaticJsonRpcProvider(
   },
   97,
 )
+export const caduceusTestnetProvider = new StaticJsonRpcProvider(
+  {
+    url: 'https://galaxy.block.caduceus.foundation/',
+    skipFetchSetup: true,
+  },
+  97,
+)
 
 export const goerliProvider = new StaticJsonRpcProvider(
   {

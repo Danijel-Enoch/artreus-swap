@@ -1,6 +1,37 @@
 import { rinkeby, mainnet, goerli } from 'wagmi/chains'
 import { Chain } from 'wagmi'
 
+export const caduceus: Chain = {
+  id: 43114,
+  name: 'Avalanche C-Chain',
+  network: 'avalanche',
+  rpcUrls: {
+    default: 'https://rpc.ankr.com/avalanche',
+  },
+  nativeCurrency: { name: 'CADUCEUS', symbol: 'CMP', decimals: 18 },
+  blockExplorers: {
+    default: {
+      name: 'snowtrace',
+      url: 'https://snowtrace.io/',
+    },
+  },
+}
+export const caduceusTestnet: Chain = {
+  id: 43114,
+  name: 'Avalanche C-Chain',
+  network: 'avalanche',
+  rpcUrls: {
+    default: 'https://rpc.ankr.com/avalanche',
+  },
+  nativeCurrency: { name: 'CADUCEUS', symbol: 'CPM_TESTNET', decimals: 18 },
+  blockExplorers: {
+    default: {
+      name: 'snowtrace',
+      url: 'https://snowtrace.io/',
+    },
+  },
+}
+
 export const avalandche: Chain = {
   id: 43114,
   name: 'Avalanche C-Chain',
